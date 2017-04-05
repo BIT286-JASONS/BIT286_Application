@@ -10,7 +10,7 @@ namespace BIT286_Application.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Your Index page.";
+            ViewBag.Message = "this is Your Index page.";
             return View();
         }
 
