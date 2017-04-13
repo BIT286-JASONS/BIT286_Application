@@ -9,5 +9,7 @@ namespace BIT286_Application.ViewModels
     {
         public string UserName { get; set;}
         public string Password { get; set; }
+
+        public string ErrorMessage { get; set; }
     }
 }
