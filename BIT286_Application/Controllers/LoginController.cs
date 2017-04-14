@@ -10,7 +10,8 @@ namespace BIT286_Application.Controllers
 {
     public class LoginController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext(); 
+        // Commenting this out because db isn't set up yet
+        // private ApplicationDbContext db = new ApplicationDbContext(); 
 
         // GET: Login
         public ActionResult Index()
@@ -18,20 +19,24 @@ namespace BIT286_Application.Controllers
             return View();
         }
 
-        public ActionResult Index(Login newLogin)
-        {
-            bool isUser = db.Users.Any(m => m.UserName == newLogin.UserName) && db.Users.Any(m => m.Password == newLogin.Password);
+        // Commenting this out because db isn't set up yet
 
-            if (isUser)
-            {
-                return View("Account/Index");
-            }
+        //[HttpPost]
+        //public ActionResult Index(Login newLogin)
+        //{
+        //    bool isUser = db.Users.Any(m => m.UserName == newLogin.UserName) && db.Users.Any(m => m.Password == newLogin.Password);
 
-            else
-            {
-                newLogin.ErrorMessage = "Invalid Input";
-                return View("Login", newLogin);
-            }
-        }
+        //    if (isUser)
+        //    {
+        //        return View("Account/Index");
+        //    }
+
+        //    else
+        //    {
+        //        newLogin.ErrorMessage = "Invalid Input";
+        //        return View("Login", newLogin);
+        //    }
+
+        //}
     }
 }
