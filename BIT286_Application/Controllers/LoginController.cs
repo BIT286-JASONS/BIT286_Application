@@ -38,5 +38,17 @@ namespace BIT286_Application.Controllers
         //    }
 
         //}
+
+        //GET: New Account
+        public ActionResult NewAccount()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult NewAccount(NewAccount newaccount)
+        {
+            return View();
+        }
     }
 }
