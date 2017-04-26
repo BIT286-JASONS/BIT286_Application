@@ -8,10 +8,16 @@ namespace BIT286_Application.Controllers
 {
     public class GameController : Controller
     {
-        // GET: Game
+
         public ActionResult Index()
         {
             return View();
         }
+
+        public ActionResult SelectGame()
+        {
+            return View();
+        }
+
     }
 }
