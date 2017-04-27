@@ -11,4 +11,4 @@ namespace BIT286_Application.Models
         public string TheQuestion { get; set; }
         public int Answer { get; set; }
     }
-}
+}  //
