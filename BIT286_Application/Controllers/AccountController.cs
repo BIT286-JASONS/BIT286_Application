@@ -28,8 +28,16 @@ namespace BIT286_Application.Controllers
         {
             return View();
         }
+
+        
         [HttpPost]
         public ActionResult ChangePassword(NewPassword newpassword)
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ScoreSaved(Score score)
         {
             return View();
         }
