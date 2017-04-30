@@ -191,6 +191,7 @@
     <Compile Include="ViewModels\NewPassword.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Shapes.sql" />
     <Content Include="App_Data\User_Database.mdf" />
     <Content Include="App_Data\User_Database_log.ldf">
       <DependentUpon>User_Database.mdf</DependentUpon>
