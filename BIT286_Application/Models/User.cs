@@ -9,9 +9,8 @@ namespace BIT286_Application.Models
     {
         public int ID { get; set; }
         public string UserName { get; set; }
-        public string password { get; set; }
-        public class Score { get; set; }
-        public bool teacher { get; set; }
+        public string Password { get; set; }
+        public bool Teacher { get; set; }
         public string Class {get; set;}
     }
 }

@@ -8,7 +8,7 @@ namespace BIT286_Application.Models
     public class Question
     {
         public int Difficulty { get; set; }
-        public string Question { get; set; }
+        public string TheQuestion { get; set; }
         public int Answer { get; set; }
     }
-}
+}  //

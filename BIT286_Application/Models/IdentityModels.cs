@@ -25,6 +25,9 @@ namespace BIT286_Application.Models
         {
         }
 
+        public DbSet<User> Users { get; set; }
+        public DbSet<Question> Questions {get;set;} 
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
